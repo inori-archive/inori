@@ -1,0 +1,11 @@
+<P Class=JPCC><font color="#90FFB0">
+</font><br>
+
+
+#FFA3AB	분홍색
+#FFD3A1	연주황색
+#FFD966	노란색
+#B7F58B	연두색
+#90FFB0	민트색
+#87CBFF	하늘색
+#E1BEFF	연보라색

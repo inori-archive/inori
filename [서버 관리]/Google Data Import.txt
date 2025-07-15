@@ -1,0 +1,27 @@
+!! 본문 복사 !!
+<div class="pdAMZe">
+
+!! 검색 이미지 !!
+data-id="
+" class="WYuW0e
+
+
+!! 이미지 크기 !!
+=w1600-h900
+=w640-h960
+
+
+!! 입력(이미지(direct url)) !!
+https://lh3.google.com/u/0/d/
+
+!! 입력(동영상(normal url)) !!
+https://drive.google.com/file/d/
+
+!! 입력(동영상 자막(normal url)) !!
+https://drive.google.com/video/captions/edit?id=
+
+
+----- [ 추가 파일 ] -----
+
+
+----- [ 관리대상 ] -----
