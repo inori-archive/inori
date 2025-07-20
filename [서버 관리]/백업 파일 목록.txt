@@ -1,7 +1,0 @@
-작업파일	드라이브 리스트 v1
-	디스크 점검 v1
-	Account v6
-	Inori Minase Index v1
-inori HTML 신양식
-inori.server
-inori.subtitle
