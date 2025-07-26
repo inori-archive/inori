@@ -1,4 +1,4 @@
-@media (min-width: 1530px) {
+@media (min-width: 1600px) {
 
     body::-webkit-scrollbar {
         display: block;
@@ -130,7 +130,7 @@
 
 }
 
-@media (min-width: 1880px) {
+@media (min-width: 1920px) {
 
     .list-select {
         width: calc((100vw - 380px) / 5);
@@ -144,7 +144,7 @@
 
 }
 
-@media (min-width: 2240px) {
+@media (min-width: 2560px) {
 
     .list-select {
         width: calc((100vw - 380px) / 6);

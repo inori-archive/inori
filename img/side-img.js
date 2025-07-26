@@ -85,7 +85,7 @@ randomimages[78] = "https://lh3.googleusercontent.com/pw/AP1GczP6XWZrFmu8iRDitHn
 randomimages[79] = "https://lh3.googleusercontent.com/pw/AP1GczO-2dsvI9jToMv4hNr8giUylyP7q3d5SoBAFLlv5RTC82Xhxt4amLVFs6yHfrxhXpEjjfxKrxwZwzUP5f1slaqBUFAJ1wcxYah-r0Vw3nrtNZ2Pt0QqrwJuoV8rJfgUyVbuBk8QLw7ptLrOq9WoaEVN"
 randomimages[80] = "https://lh3.googleusercontent.com/pw/AP1GczO1RUMG-vmqjpif5PNeGN7JUK60RwNi2lZJvPlglq7u_pH8H38NGy7k4YR-V9hthRQB7CwJlBptNMg22XmoCYBvnrz34oWH7RjqTDzSlACi09JkO27f1BW5cQZXC3KqV1clWjQDzXmoZMXZ1RTTxJyw"
 
-document.write('<img name="defaultimage" src="' + randomimages[Math.floor(Math.random() * (randomimages.length))] + '"  class="side-random-img">')
+document.write('<img src="' + randomimages[Math.floor(Math.random() * (randomimages.length))] + '"  class="side-random-img">')
 
 function rotateimage() {
   var tempindex = Math.floor(Math.random() * randomimages.length);

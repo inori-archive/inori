@@ -1,4 +1,4 @@
-@media (min-width: 1530px) {
+@media (min-width: 1580px) {
 
     body::-webkit-scrollbar {
         display: block;
@@ -14,8 +14,8 @@
 
     .navbar {
         height: 51px;
-        padding: 0 max(60px, calc((100vw - 2300px) / 2));
-        margin: 12px 0;
+        padding: 0 max(30px, calc((100vw - 2470px) / 2));
+        margin: 10px 0;
     }
 
     .navbar a {
@@ -54,27 +54,27 @@
     }
 
     .video-page {
-        grid-template-columns: min(1760px, calc(100vw - 590px)) 560px;
-        grid-template-rows: min(990px, calc((100vw - 590px) * 0.5625)) 30px 30px;
+        grid-template-columns: min(1920px, calc(100vw - 584px)) 560px;
+        grid-template-rows: min(1080px, calc((100vw - 584px) * 0.5625)) 30px 30px;
         gap: 8px 4px;
         padding: 0;
     }
 		
     .main-video {
-        width: calc(100vw - 590px);
-        height: calc((100vw - 590px) * 0.5625);
-        max-width: 1760px;
-        max-height: 990px;
+        width: calc(100vw - 584px);
+        height: calc((100vw - 584px) * 0.5625);
+        max-width: 1920px;
+        max-height: 1080px;
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         overflow: hidden;
     }
     
     .video-main iframe {
-        width: calc(100vw - 590px);
-        height: calc((100vw - 590px) * 0.5625);
-        max-width: 1760px;
-        max-height: 990px;
+        width: calc(100vw - 584px);
+        height: calc((100vw - 584px) * 0.5625);
+        max-width: 1920px;
+        max-height: 1080px;
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         overflow: hidden;
@@ -98,8 +98,9 @@
 
     .main-playlist {
         width: 560px;
-        height: calc((100vw - 590px) * 0.5625);
-        max-height: 990px;
+        height: calc((100vw - 584px) * 0.5625);
+        min-height: 0px;
+        max-height: 1080px;
         grid-column: 2 / 3;
         grid-row: 1 / 2;
     }
@@ -126,18 +127,6 @@
 
     #gttopbtn {
         display: none;
-    }
-
-}
-
-@media (min-width: 2420px) {
-
-    #main-video-title {
-        padding: 0 0 0 20px;
-    }
-
-    #main-video-subtitle {
-        padding: 0 0 0 20px;
     }
 
 }
