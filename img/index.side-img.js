@@ -1,5 +1,8 @@
-var delay = 4000
+var delay = 6000
+var stopAfter = 120 * 1000;
+
 var curindex = 0
+var currentActiveImageId = 'image1';
 
 var randomimages = new Array()
 
@@ -85,24 +88,41 @@ randomimages[78] = "https://lh3.googleusercontent.com/pw/AP1GczP6XWZrFmu8iRDitHn
 randomimages[79] = "https://lh3.googleusercontent.com/pw/AP1GczO-2dsvI9jToMv4hNr8giUylyP7q3d5SoBAFLlv5RTC82Xhxt4amLVFs6yHfrxhXpEjjfxKrxwZwzUP5f1slaqBUFAJ1wcxYah-r0Vw3nrtNZ2Pt0QqrwJuoV8rJfgUyVbuBk8QLw7ptLrOq9WoaEVN"
 randomimages[80] = "https://lh3.googleusercontent.com/pw/AP1GczO1RUMG-vmqjpif5PNeGN7JUK60RwNi2lZJvPlglq7u_pH8H38NGy7k4YR-V9hthRQB7CwJlBptNMg22XmoCYBvnrz34oWH7RjqTDzSlACi09JkO27f1BW5cQZXC3KqV1clWjQDzXmoZMXZ1RTTxJyw"
 
-document.write('<img src="' + randomimages[Math.floor(Math.random() * (randomimages.length))] + '"  class="side-random-img">')
+var initialImageIndex = Math.floor(Math.random() * randomimages.length);
+document.getElementById('image1').src = randomimages[initialImageIndex];
+document.getElementById('image1').classList.add('active');
+curindex = initialImageIndex;
 
 function rotateimage() {
+  var oldImageElement = document.getElementById(currentActiveImageId);
+  var newImageId = (currentActiveImageId === 'image1') ? 'image2' : 'image1';
+  var newImageElement = document.getElementById(newImageId);
+
   var tempindex = Math.floor(Math.random() * randomimages.length);
 
   if (curindex === tempindex) {
-    curindex = curindex === 0 ? 1 : curindex - 1;
+    curindex = (curindex + 1) % randomimages.length;
   } else {
     curindex = tempindex;
   }
 
-  var img = new Image();
-  img.src = randomimages[curindex];
+  newImageElement.src = randomimages[curindex];
 
-  img.onload = function() {
-    document.images.defaultimage.src = randomimages[curindex];
+  newImageElement.onload = function() {
+    oldImageElement.classList.remove('active');
+    newImageElement.classList.add('active');
+
+    currentActiveImageId = newImageId;
   };
-
+  
+  newImageElement.onerror = function() {
+    console.error("Failed to load image: " + randomimages[curindex]);
+  };
 }
 
-setInterval("rotateimage()", delay);
+var rotationInterval = setInterval(rotateimage, delay);
+
+setTimeout(function() {
+  clearInterval(rotationInterval);
+  console.log("Image rotation stopped after " + stopAfter / 1000 + " seconds.");
+}, stopAfter);

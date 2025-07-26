@@ -36,6 +36,17 @@
     display: flex;
 }
 
+.image-container {
+    width: 300px;
+    height: calc(300px * 0.5625);
+    margin: 0 0 10px 0;
+}
+
+.fade-img {
+    width: 300px;
+    height: calc(300px * 0.5625);
+  }
+
 .main-middle {
     color: #ffffff;
     text-align: center;

@@ -60,10 +60,6 @@
         display: none;
     }
 
-    .side-random-img {
-        display: none;
-    }
-
     .row-main {
         width: calc(100vw - 30px);
         padding: 0 10px 10px 10px;
