@@ -1,17 +1,5 @@
 @media (min-width: 1580px) {
 
-    body::-webkit-scrollbar {
-        display: block;
-        width: 10px;
-    }
-
-    body::-webkit-scrollbar-thumb {
-        background-color: #aaaaaa;
-        background-clip: padding-box;
-        border: 2px solid transparent;
-        border-radius: 10px;
-    }
-
     .navbar {
         height: 51px;
         padding: 0 max(50px, calc((100vw - 2424px) / 2));
@@ -60,10 +48,12 @@
         padding: 0;
         margin: 0 20px;
     }
-		
+
     .main-video {
         width: calc(100vw - 604px);
         height: calc((100vw - 604px) * 0.5625);
+        max-width: 1920px;
+        max-height: 1080px;
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         overflow: hidden;
@@ -72,6 +62,8 @@
     .video-main iframe {
         width: calc(100vw - 604px);
         height: calc((100vw - 604px) * 0.5625);
+        max-width: 1920px;
+        max-height: 1080px;
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         overflow: hidden;
@@ -117,7 +109,7 @@
     }
 
     .playlist-title {
-        width: 310px;
+        width: auto;
         font-size: 18px;
         padding: 0 0 0 8px;
     }
