@@ -1,3 +1,13 @@
+ body::-webkit-scrollbar {
+    display: none;
+ }
+ 
+ body::-webkit-scrollbar-thumb {
+    background-color: #aaaaaa;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
 .navbar {
     background-image: linear-gradient(62deg, #D3ABFB 20%, #75B8FB 100%);
     overflow: hidden;
@@ -55,6 +65,10 @@
     border-radius: 8px;
 }
 
+ .main-playlist::-webkit-scrollbar {
+    display: none;
+ }
+ 
 .main-playlist::-webkit-scrollbar-thumb {
     background-color: #AAAAAA;
     background-clip: padding-box;

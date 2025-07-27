@@ -121,9 +121,6 @@
     }
 
     body::-webkit-scrollbar-thumb {
-        background-color: #aaaaaa;
-        background-clip: padding-box;
-        border: 2px solid transparent;
         border-radius: 10px;
     }
 
@@ -189,11 +186,11 @@
     }
 
     .main-playlist::-webkit-scrollbar {
-        width: 0px;
+        display: none;
     }
 
     .main-playlist::-webkit-scrollbar-thumb {
-        border-radius: 0px;
+        display: none;
     }
 
     .playlist-img {

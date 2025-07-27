@@ -1,5 +1,13 @@
 @media (min-width: 1580px) {
 
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        display: none;
+    }
+
     .navbar {
         height: 51px;
         padding: 0 max(50px, calc((100vw - 2424px) / 2));
@@ -95,10 +103,12 @@
     }
 
     .main-playlist::-webkit-scrollbar {
+        display: block;
         width: 10px;
     }
 
     .main-playlist::-webkit-scrollbar-thumb {
+        display: block;
         border-radius: 10px;
     }
 

@@ -84,6 +84,7 @@
     }
 
     .main-playlist::-webkit-scrollbar {
+        display: block;
         width: 8px;
     }
 
