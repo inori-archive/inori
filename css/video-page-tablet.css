@@ -83,10 +83,12 @@
     }
 
     .main-playlist::-webkit-scrollbar {
+        display: block;
         width: 10px;
     }
 
     .main-playlist::-webkit-scrollbar-thumb {
+        display: block;
         border-radius: 10px;
     }
 
@@ -121,6 +123,7 @@
     }
 
     body::-webkit-scrollbar-thumb {
+        display: block;
         border-radius: 10px;
     }
 

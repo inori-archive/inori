@@ -3,6 +3,7 @@
  }
  
  body::-webkit-scrollbar-thumb {
+    display: none;
     background-color: #aaaaaa;
     background-clip: padding-box;
     border: 2px solid transparent;
@@ -70,6 +71,7 @@
  }
  
 .main-playlist::-webkit-scrollbar-thumb {
+    display: none;
     background-color: #AAAAAA;
     background-clip: padding-box;
     border: 2px solid transparent;

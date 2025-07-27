@@ -89,6 +89,7 @@
     }
 
     .main-playlist::-webkit-scrollbar-thumb {
+        display: block;
         border-radius: 8px;
     }
 
